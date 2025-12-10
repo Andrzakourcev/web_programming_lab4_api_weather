@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+}
+
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.control-panel {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.input-wrapper {
+  position: relative;
+  flex: 1;
+  min-width: 200px;
+}
+
+input {
+  flex: 1;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px 14px;
+  background: #3498db;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  min-width: 100px;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background: #217dbb;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+/* Список городов */
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.weather-card {
+  background: white;
+  padding: 16px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.weather-card h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  padding: 4px 8px;
+  background: #e74c3c;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.delete-btn:hover {
+  background: #c0392b;
+}
+
+.day-forecast {
+  margin-bottom: 10px;
+  border-top: 1px solid #eee;
+  padding-top: 6px;
+  font-size: 14px;
+}
+
+.day-forecast strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.suggestions {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  display: none;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background: #eef6ff;
+}
